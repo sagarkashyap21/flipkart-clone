@@ -21,11 +21,12 @@ export default function App() {
         <Navbar />
         {/* <Home /> */}
         <Routes>
-          <Route exact path="/" element={<Home />}/>
+          {/* <Route exact path="/" element={<Home />}/> */}
 
           <Route exact path="/grocery" element={<Grocery />} />
           <Route exact path="/mobile" element={<Mobile />} />
           <Route exact path="/fashion" element={<Fashion />} />
+          <Route exact path="*" element={<Home />} />
         </Routes>
         <Footer />
       </Router>

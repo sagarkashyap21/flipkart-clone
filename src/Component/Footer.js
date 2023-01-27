@@ -1,6 +1,6 @@
 import React from 'react'
-// import "../app.css"
-// import {Link} from "react-router-dom"
+import "../App.css"
+import {Link} from "react-router-dom"
 
 export default function Footer() {
     return (
@@ -10,36 +10,36 @@ export default function Footer() {
                 <div className="container">
                     <div className="leftFooter">
                         <div style={{}}>
-                            <a href="">Contact us</a>
-                            <a href="">About us</a>
-                            <a href="">ABOUT</a>
-                            <a href="">Careers</a>
-                            <a href="">Flipkart Stories</a>
-                            <a href="">Press</a>
-                            <a href="">Flipkart Wholesale</a>
-                            <a href="">Corporate information</a>
+                            <Link to="">Contact us</Link>
+                            <Link to="">About us</Link>
+                            <Link to="">ABOUT</Link>
+                            <Link to="">Careers</Link>
+                            <Link to="">Flipkart Stories</Link>
+                            <Link to="">Press</Link>
+                            <Link to="">Flipkart Wholesale</Link>
+                            <Link to="">Corporate information</Link>
                         </div>
                         <div>
-                            <a href="">Help</a>
-                            <a href="">Shipping</a>
-                            <a href="">Cancellation & Returns</a>
-                            <a href="">FAQ</a>
-                            <a href="">Report Infringment</a>
+                            <Link to="">Help</Link>
+                            <Link to="">Shipping</Link>
+                            <Link to="">Cancellation & Returns</Link>
+                            <Link to="">FAQ</Link>
+                            <Link to="">Report Infringment</Link>
                         </div>
                         <div>
-                            <a href="">POLICY</a>
-                            <a href="">Return Policy</a>
-                            <a href="">Terms of Use</a>
-                            <a href="">Security</a>
-                            <a href="">Privacy</a>
-                            <a href="">Sitemap</a>
-                            <a href="">Epr Compliance</a>
+                            <Link to="">POLICY</Link>
+                            <Link to="">Return Policy</Link>
+                            <Link to="">Terms of Use</Link>
+                            <Link to="">Security</Link>
+                            <Link to="">Privacy</Link>
+                            <Link to="">Sitemap</Link>
+                            <Link to="">Epr Compliance</Link>
                         </div>
                         <div>
-                            <a href="">SOCIAL</a>
-                            <a href="">Facebook</a>
-                            <a href="">Twitter</a>
-                            <a href="">Youtube</a>
+                            <Link to="">SOCIAL</Link>
+                            <Link to="">Facebook</Link>
+                            <Link to="">Twitter</Link>
+                            <Link to="">Youtube</Link>
                         </div>
                     </div>
                     <div style={{ border: "1px solid gray", marginRight: "30px", marginTop: "95px", height: "280px", backgroundColor: "gray" }}></div>
@@ -64,7 +64,7 @@ export default function Footer() {
                             <p className="FooterP"> Karnataka, India </p>
                             <p className="FooterP"> CIN : U51109KA2012PTC066107 </p>
                             <p className="FooterP"> Telephone :
-            <a href="" style={{ textDecoration: "none" }}> 044-45614700</a>
+            <Link to="" style={{ textDecoration: "none" }}> 044-45614700</Link>
                             </p>
                         </div>
                     </div>

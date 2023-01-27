@@ -1,5 +1,5 @@
 import React from 'react'
-// import {Link} from "react-router-dom"
+import {Link} from "react-router-dom"
 
 
 export default function Navbar() {
@@ -14,9 +14,9 @@ export default function Navbar() {
         <li style={{backgroundColor:"white",marginLeft:"20px",height:"35px",width:"100px",display:"flex",justifyContent:"center"}}><button style={{color:"blue",backgroundColor:"white",fontSize:"20px",border:"0"}}>Login</button></li>
     </ul>
     <ul style={{border:"",marginTop:"5px",width:"370px",display:"flex",listStyle:"none",justifyContent:"space-between"}}>
-        <li><a href="" style={{color:"white",fontSize:"20px",fontWeight:"600",textDecoration:"none"}}>Become a Seller</a></li>
-        <li><a href="" style={{color:"white",fontSize:"20px",fontWeight:"600",textDecoration:"none"}}>More</a></li>
-        <li><a href="" style={{color:"white",fontSize:"20px",fontWeight:"600",textDecoration:"none"}}><i style={{marginRight:"10px"}} class="fa fa-solid fa-cart-shopping"></i>Cart</a></li>
+        <li><Link to="" style={{color:"white",fontSize:"20px",fontWeight:"600",textDecoration:"none"}}>Become a Seller</Link></li>
+        <li><Link to="" style={{color:"white",fontSize:"20px",fontWeight:"600",textDecoration:"none"}}>More</Link></li>
+        <li><Link to="" style={{color:"white",fontSize:"20px",fontWeight:"600",textDecoration:"none"}}><i style={{marginRight:"10px"}} class="fa fa-solid fa-cart-shopping"></i>Cart</Link></li>
     </ul>
 </div>
 
