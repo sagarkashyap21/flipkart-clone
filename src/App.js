@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import "./App.css"
+// import Footer from './Component/Footer'
+// import Navbar from './Component/Navbar'
+// import Section1 from './Component/Section1'
+// import Section2 from './Component/Section2'
+// import Sectoin3 from './Component/Sectoin3'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Grocery from './Component/Section1items/Grocery'
+import Mobile from './Component/Section1items/Mobile'
+import Home from './Component/Home'
+import Navbar from './Component/Navbar'
+import Footer from './Component/Footer'
+import Fashion from './Component/Section1items/Fashion'
 
-function App() {
+export default function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      <Router>
+        <Navbar />
+        {/* <Home /> */}
+        <Routes>
+          <Route exact path="/" element={<Home />}/>
 
-export default App;
+          <Route exact path="/grocery" element={<Grocery />} />
+          <Route exact path="/mobile" element={<Mobile />} />
+          <Route exact path="/fashion" element={<Fashion />} />
+        </Routes>
+        <Footer />
+      </Router>
+
+
+    </>
+  )
+}
